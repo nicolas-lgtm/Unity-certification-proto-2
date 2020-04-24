@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+    bool hasEaten = false;
+    GameManager gameManager;
     void OnTriggerEnter(Collider other)
     {
-        // Instead of destroying the projectile when it collides with an animal
-        //Destroy(other.gameObject); 
+        GameObject.Find("Game Manager").GetComponent<GameManager>().animalsFed++;
 
-        // Just deactivate the food and destroy the animal
+        if(!hasEaten) {
+            gameObject.transform.Rotate(new Vector3(gameObject.transform.rotation.x, gameObject.transform.rotation.y + 180, gameObject.transform.rotation.z));
+            hasEaten = true;
+            GameObject.Find("Player").GetComponent<PlayerController>().munitions++;
+        }
+
         other.gameObject.SetActive(false);
-        Destroy(gameObject);
     }
 
 }

@@ -970,10 +970,10 @@ GameObject:
   m_Component:
   - component: {fileID: 25321659218099924}
   - component: {fileID: 25321659208940898}
-  - component: {fileID: 25321659110978566}
   - component: {fileID: 545257266}
   - component: {fileID: 8648121850195774435}
   - component: {fileID: 114066530148564778}
+  - component: {fileID: 114248402310963670}
   m_Layer: 0
   m_Name: Animal_Fox_02
   m_TagString: Untagged
@@ -1026,19 +1026,6 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &25321659110978566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 25321659218421206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98de57a25c61f4e4c8237060ece36377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &545257266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,3 +1063,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114248402310963670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25321659218421206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58574bd9a38e57b4fbcd542cb3c8f84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
