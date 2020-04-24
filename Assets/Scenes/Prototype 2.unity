@@ -625,6 +625,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameIsActive: 1
   gameOverScreen: {fileID: 1754433293}
+  animalsFedUI: {fileID: 1327356964}
+  animalsFed: 0
 --- !u!4 &839233668
 Transform:
   m_ObjectHideFlags: 0
